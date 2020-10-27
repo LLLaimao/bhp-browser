@@ -1,0 +1,367 @@
+body {
+  .el-select-dropdown__list {
+    .el-select-dropdown__item.selected {
+      color: rgb(12, 108, 242) !important;
+    }
+  }
+}
+
+html,
+body,
+#app {
+  width  : 100%;
+  height : 100%;
+  margin : 0;
+  padding: 0;
+}
+
+#app {
+  background: #f5f5f5;
+
+  @media screen and (max-width: 600px) {
+    .block {
+      .hide1 {
+        display: none !important;
+      }
+    }
+  }
+
+  .block {
+    min-height: 799px;
+
+    .NEWBLOCKS {
+      font-size: 20px;
+      padding  : 20px 0;
+      color    : #000;
+    }
+
+    .explorerTable tr th {
+      text-align: center;
+    }
+
+    .explorerTable tr td {
+      text-align: center;
+    }
+
+    .cell {
+      display           : -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 1;
+    }
+
+    .fenPage {
+      .el-pager {
+        .active {
+          color       : rgb(12, 108, 242) !important;
+          border-color: rgb(12, 108, 242);
+        }
+
+        .btn-quicknext+li {
+          display: none;
+        }
+
+        li {
+          border       : 1px solid #ccc;
+          border-radius: 4px;
+          margin-left  : 4px;
+          padding      : 0;
+        }
+
+        li:hover {
+          color       : rgb(12, 108, 242) !important;
+          border-color: rgb(12, 108, 242);
+        }
+      }
+
+      padding: 0;
+
+      .fenPageblock {
+        font-size      : 18px;
+        color          : #161a23;
+        padding        : 6px 0;
+        display        : flex;
+        justify-content: flex-end;
+        overflow       : auto !important;
+
+        .el-pagination {
+          background: #fff;
+          margin    : 0 20px;
+        }
+      }
+    }
+
+    .el-card__body {
+      padding-top   : 10px;
+      padding-bottom: 10px;
+    }
+
+    .explainSearch {
+      color  : #444;
+      display: flex;
+
+      .explain {
+        width        : 50%;
+        padding-right: 30px;
+
+        h3 {
+          font-size  : 26px;
+          font-weight: normal;
+        }
+      }
+
+      .search {
+        width     : 50%;
+        height    : 300px;
+        background: #f5f7f9;
+        padding   : 0 30px;
+
+        h3 {
+          font-size  : 26px;
+          font-weight: normal;
+        }
+
+        p {
+          margin-bottom: 30px;
+        }
+
+        .indexSerch {
+          width   : 100%;
+          position: relative;
+
+          img {
+            height  : 24px;
+            width   : 24px;
+            display : inline-block;
+            position: absolute;
+            right   : 80px;
+            top     : 2px;
+          }
+
+          .indexInput {
+            width       : 68%;
+            margin-right: 20px;
+
+            input {
+              background: #fff;
+              color     : #909399;
+            }
+          }
+
+          button {
+            width     : 20%;
+            background: #22344e;
+            color     : #fff;
+          }
+        }
+      }
+    }
+  }
+}
+
+.warpper {
+  width : 1200px;
+  margin: 0 auto;
+}
+
+li,
+td,
+th,
+.Merkle
+ {
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+.overFlow{
+  word-break:break-all!important;
+}
+
+@media screen and (max-width: 1024px) {
+  .warpper {
+    width: 94%;
+  }
+
+  .block {
+    min-height: calc(80vh) !important;
+  }
+}
+
+.topwarpper {
+  box-sizing  : border-box;
+  margin-top  : 30px;
+  padding-left: 10px;
+  border-left : 4px solid rgb(12, 108, 242);
+
+  p:first-child {
+    margin     : 0;
+    font-weight: 600;
+  }
+}
+
+.Block-detailsTranUl,
+li {
+  list-style: none;
+  padding   : 0;
+  margin    : 0;
+}
+
+.Block-detailsTranUl {
+  display        : flex;
+  height         : 300px;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+  align-items    : center;
+  box-shadow     : 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius  : 4px;
+
+  li {
+    width     : 33.2%;
+    height    : 49.6%;
+    background: #fff;
+
+    .divLi {
+      height         : 100%;
+      padding        : 0 20px;
+      display        : flex;
+      flex-direction : column;
+      align-items    : center;
+      justify-content: center;
+
+      p {
+        width     : 100%;
+        text-align: center;
+        color     : #282828;
+        font-size : 22px;
+        margin    : 0 0 15px 0;
+      }
+
+      span {
+        color: #acacac;
+      }
+    }
+
+    .divLi1 {
+      p {
+        color       : rgb(12, 108, 242);
+        text-justify: newspaper;
+        word-break  : break-all;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Block-detailsTranUl {
+    height: 720px;
+
+    li {
+      width        : 100%;
+      height       : 120px;
+      border-bottom: 1px solid #ccc;
+    }
+  }
+
+  .fenPageblock {
+    justify-content: flex-start !important;
+  }
+}
+
+.fromTo {
+  display        : flex;
+  justify-content: space-between;
+  background     : #fff;
+  padding        : 0 10px;
+  border-radius  : 4px;
+  background     : #fff;
+  box-shadow     : 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  margin         : 36px 0;
+
+  .fromToLeft,
+  .fromToRight {
+    width: 42%;
+
+    p {
+      margin-bottom: 20px;
+      text-align   : center;
+      font-size    : 14px;
+    }
+
+    .fromToA {
+      text-align   : center;
+      margin-bottom: 20px;
+
+      span {
+        color          : rgb(12, 108, 242);
+        cursor         : pointer;
+        text-decoration: none;
+        font-size      : 14px;
+      }
+    }
+
+    .fromToSpan {
+      text-align   : center;
+      margin-bottom: 30px;
+
+      span {
+        font-size: 18px;
+      }
+
+      span:last-child {
+        color : rgb(12, 108, 242);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .fromToMiddle {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+
+    img {
+      width : 40px;
+      height: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .fromTo {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : flex-start !important;
+    flex-wrap      : nowrap;
+
+    .fromToLeft,
+    .fromToMiddle,
+    .fromToRight {
+      width     : 50%;
+      align-self: flex-start;
+    }
+  }
+}
+
+h2 {
+  font-size    : 20px;
+  margin-top   : 36px;
+  margin-bottom: 20px;
+}
+
+.call,
+.verify {
+  padding      : 32px;
+  background   : #fff;
+  border-radius: 4px;
+  box-shadow   : 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+
+  p {
+    margin-top  : 0;
+    text-justify: newspaper;
+    word-break  : break-all;
+  }
+}
+
+.Block-detailsTranUl .divLi1 p {
+  cursor: pointer;
+}
