@@ -1,4 +1,4 @@
-# dddemo
+# bhp-browser
 
 ## Project setup
 ```
